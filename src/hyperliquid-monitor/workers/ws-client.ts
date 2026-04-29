@@ -5,7 +5,8 @@ import { UserDevice } from '../database/user-repo';
 const HL_WS_URL = 'wss://api.hyperliquid.xyz/ws';
 const PING_INTERVAL_MS = 30_000;
 const RECONNECT_DELAY_MS = 5_000;
-const MAX_USERS_PER_SHARD = 50;
+const MAX_USERS_PER_SHARD = 500;
+const SHARD_CONNECT_STAGGER_MS = 250;
 
 interface Shard {
   id: number;
@@ -29,11 +30,16 @@ export class WsClient {
     }
 
     const shardGroups = this.chunk(users, MAX_USERS_PER_SHARD);
-    shardGroups.forEach((group, idx) => {
-      const shard: Shard = { id: idx, ws: null, users: group, pingTimer: null };
+    for (let idx = 0; idx < shardGroups.length; idx++) {
+      const shard: Shard = { id: idx, ws: null, users: shardGroups[idx], pingTimer: null };
       this.shards.push(shard);
       this.connectShard(shard);
-    });
+      if (idx < shardGroups.length - 1) {
+        await new Promise<void>((resolve) =>
+          setTimeout(resolve, SHARD_CONNECT_STAGGER_MS),
+        );
+      }
+    }
 
     console.log(
       `[WsClient] started ${this.shards.length} shard(s) for ${users.length} users`,

@@ -1,0 +1,15 @@
+[
+  {
+    "chain": "Ethereum",
+    "claimCount": 23301,
+    "transferCount": 23307,
+    "match": false
+  },
+  {
+    "chain": "Arbitrum",
+    "claimCount": 127681,
+    "transferCount": -1,
+    "match": false,
+    "error": "could not coalesce error (error={ \"code\": -32000, \"message\": \"log query timed out\" }, payload={ \"id\": 140, \"jsonrpc\": \"2.0\", \"method\": \"eth_getLogs\", \"params\": [ { \"address\": \"0x6985884c4392d348587b19cb9eaaf157f13271cd\", \"fromBlock\": \"0xf3a9ee0\", \"toBlock\": \"0xf423fff\", \"topics\": [ \"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\", \"0x0000000000000000000000000000000000000000000000000000000000000000\" ] } ] }, code=UNKNOWN_ERROR, version=6.16.0)"
+  }
+]

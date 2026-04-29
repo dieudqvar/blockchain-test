@@ -1,0 +1,52 @@
+/Users/cap2301/.nvm/versions/node/v24.14.0/bin/node --import file:/Applications/WebStorm.app/Contents/plugins/nodeJS/js/ts-file-loader/node_modules/tsx/dist/loader.cjs /Users/cap2301/Twendee/blockchain-test/src/zro/run-scan.ts
+◇ injected env (15) from ../../.env // tip: ⌁ auth for agents [www.vestauth.com]
+=== ZRO Airdrop Scanner ===
+
+Contract : 0x6985884c4392d348587b19cb9eaaf157f13271cd
+Topic    : 0xefed6d3500546b29533b128a29e3a94d70788727f0507505ac12eaf2e578fd9c
+
+  [Ethereum] connecting...
+  [Ethereum] ready  toBlock=24,985,149  totalBlocks=4,985,149
+  [Ethereum] already completed (23301 events) — skipping
+  [Arbitrum] connecting...
+  [Arbitrum] ready  toBlock=457,551,655  totalBlocks=236,551,655
+  [Arbitrum] already completed (127681 events) — skipping
+  [Optimism] connecting...
+  [Optimism] ready  toBlock=150,931,398  totalBlocks=29,931,398
+  [Optimism] scanning from block 143,158,000...
+  [Base] connecting...
+  [Base] ready  toBlock=45,336,143  totalBlocks=29,836,143
+  [Base] scanning from block 17,342,000...
+  [Polygon] connecting...
+  [Polygon] ready  toBlock=86,182,878  totalBlocks=28,682,878
+  [Polygon] scanning from block 57,500,000...
+  [BSC] connecting...
+  [BSC] ready  toBlock=95,353,400  totalBlocks=55,853,400
+  [BSC] scanning from block 39,500,000...
+  [Avalanche] connecting...
+  [Avalanche] ready  toBlock=84,177,745  totalBlocks=38,177,745
+  [Avalanche] scanning from block 69,734,000...
+  [Polygon] ERROR at block 57,500,000-57,501,999: [-32701] History has been pruned for this block. To remove restrictions, order a dedicated full node here: https://www.allnodes.com/pol/host
+  [Polygon] FAILED — [-32701] History has been pruned for this block. To remove restrictions, order a dedicated full node here: https://www.allnodes.com/pol/host
+  [Base]   6%  block 17,343,999/45,336,143  events: 129700
+  [Avalanche]  62%  block 69,735,999/84,177,745  events: 37247
+  [BSC] ERROR at block 39,500,000-39,501,999: [-32005] limit exceeded
+  [BSC] FAILED — [-32005] limit exceeded
+  [Optimism]  74%  block 143,159,999/150,931,398  events: 233402
+  [Avalanche]  63%  block 69,863,999/84,177,745  events: 37280
+  [Base]   7%  block 17,441,999/45,336,143  events: 131033
+  [Optimism]  75%  block 143,301,999/150,931,398  events: 233531
+  [retry] [0x6985] attempt 1, wait 2s
+  [retry] [0x6985] attempt 1, wait 2s
+  [Avalanche]  64%  block 70,245,999/84,177,745  events: 37353
+  [Base]   8%  block 17,739,999/45,336,143  events: 132602
+  [Optimism]  76%  block 143,601,999/150,931,398  events: 233754
+  [retry] [0x6985] attempt 1, wait 2s
+  [retry] [0x6985] attempt 1, wait 2s
+  [Avalanche]  65%  block 70,627,999/84,177,745  events: 37407
+  [retry] [0x6985] attempt 1, wait 2s
+  [Base]   9%  block 18,039,999/45,336,143  events: 133974
+  [Optimism]  77%  block 143,899,999/150,931,398  events: 234006
+  [Avalanche]  66%  block 71,009,999/84,177,745  events: 37466
+
+
