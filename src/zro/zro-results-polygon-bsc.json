@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-05-04T07:48:43.898Z",
+  "chains": [
+    {
+      "chain": "Polygon",
+      "events": 0,
+      "uniqueOnChain": 0,
+      "fromBlock": 57500000,
+      "toBlock": 0,
+      "error": "getaddrinfo ENOTFOUND wss"
+    },
+    {
+      "chain": "BSC",
+      "events": 0,
+      "uniqueOnChain": 0,
+      "fromBlock": 39500000,
+      "toBlock": 0,
+      "error": "getaddrinfo ENOTFOUND wss"
+    }
+  ]
+}

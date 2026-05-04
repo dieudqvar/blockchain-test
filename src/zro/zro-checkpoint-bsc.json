@@ -3,5 +3,47 @@
   "recipients": [],
   "events": 0,
   "toBlock": 95353400,
-  "done": false
+  "done": false,
+  "failedRanges": [
+    {
+      "start": 39500000,
+      "end": 39500999,
+      "reason": "unsupported protocol bsc-rpc.publicnode.com (info={ \"protocol\": \"bsc-rpc.publicnode.com\" }, operation=\"request\", code=UNSUPPORTED_OPERATION, version=6.16.0)"
+    },
+    {
+      "start": 39500000,
+      "end": 39500999,
+      "reason": "[-32000] The method eth_getLogs is not supported."
+    },
+    {
+      "start": 39500000,
+      "end": 39500499,
+      "reason": "getLogsAdaptive is not defined"
+    },
+    {
+      "start": 39500000,
+      "end": 39500499,
+      "reason": "[-32000] header not found"
+    },
+    {
+      "start": 39500000,
+      "end": 39500999,
+      "reason": "[-32000] failed to get logs for block #39500002 (0xf144d6..ac275b)"
+    },
+    {
+      "start": 39500000,
+      "end": 39500999,
+      "reason": "getaddrinfo ENOTFOUND wss"
+    },
+    {
+      "start": 39500000,
+      "end": 39500999,
+      "reason": "getaddrinfo ENOTFOUND wss"
+    },
+    {
+      "start": 39500000,
+      "end": 39500049,
+      "reason": "[-32005] limit exceeded"
+    }
+  ]
 }

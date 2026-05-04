@@ -35,7 +35,7 @@
       "uniqueOnChain": 0,
       "fromBlock": 57500000,
       "toBlock": 0,
-      "error": "could not coalesce error (error={ \"code\": -32701, \"message\": \"History has been pruned for this block. To remove restrictions, order a dedicated full node here: https://www.allnodes.com/pol/host\" }, payload={ \"id\": 1, \"jsonrpc\": \"2.0\", \"method\": \"eth_getLogs\", \"params\": [ { \"address\": \"0x6985884c4392d348587b19cb9eaaf157f13271cd\", \"fromBlock\": \"0x36d6160\", \"toBlock\": \"0x36d692f\", \"topics\": [ \"0xefed6d3500546b29533b128a29e3a94d70788727f0507505ac12eaf2e578fd9c\" ] } ] }, code=UNKNOWN_ERROR, version=6.16.0)"
+      "error": "server response 400 Bad Request (request={  }, response={  }, error=null, info={ \"requestUrl\": \"https://polygon.drpc.org\", \"responseBody\": \"{\\\"id\\\":4,\\\"jsonrpc\\\":\\\"2.0\\\",\\\"error\\\":{\\\"message\\\":\\\"ranges over 10000 blocks are not supported on freetier\\\",\\\"code\\\":35}}\", \"responseStatus\": \"400 Bad Request\" }, code=SERVER_ERROR, version=6.16.0)"
     },
     {
       "chain": "BSC",
@@ -43,7 +43,7 @@
       "uniqueOnChain": 0,
       "fromBlock": 39500000,
       "toBlock": 0,
-      "error": "could not coalesce error (error={ \"code\": -32005, \"message\": \"limit exceeded\" }, payload={ \"id\": 1, \"jsonrpc\": \"2.0\", \"method\": \"eth_getLogs\", \"params\": [ { \"address\": \"0x6985884c4392d348587b19cb9eaaf157f13271cd\", \"fromBlock\": \"0x25ab8e0\", \"toBlock\": \"0x25ac0af\", \"topics\": [ \"0xefed6d3500546b29533b128a29e3a94d70788727f0507505ac12eaf2e578fd9c\" ] } ] }, code=UNKNOWN_ERROR, version=6.16.0)"
+      "error": "could not coalesce error (error={ \"code\": -32000, \"message\": \"header not found\" }, payload={ \"id\": 1, \"jsonrpc\": \"2.0\", \"method\": \"eth_getLogs\", \"params\": [ { \"address\": \"0x6985884c4392d348587b19cb9eaaf157f13271cd\", \"fromBlock\": \"0x25ab8e0\", \"toBlock\": \"0x25ac0af\", \"topics\": [ \"0xefed6d3500546b29533b128a29e3a94d70788727f0507505ac12eaf2e578fd9c\" ] } ] }, code=UNKNOWN_ERROR, version=6.16.0)"
     },
     {
       "chain": "Avalanche",
@@ -53,5 +53,5 @@
       "toBlock": 84177745
     }
   ],
-  "scannedAt": "2026-04-30T04:48:58.636Z"
+  "scannedAt": "2026-05-04T07:39:42.410Z"
 }
